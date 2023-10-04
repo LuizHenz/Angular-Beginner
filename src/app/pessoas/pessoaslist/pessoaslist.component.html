@@ -1,0 +1,12 @@
+<p>pessoaslist works!</p>
+
+<table border="2px">
+    <tr>
+        <th>NOME</th>
+        <th>IDADE</th>
+    </tr>
+    <tr *ngFor="let pessoa of lista" [hidden] = "pessoa.idade <= 30">
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.idade}}</td>
+    </tr>
+</table>
