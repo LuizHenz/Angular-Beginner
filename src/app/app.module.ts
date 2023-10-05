@@ -6,16 +6,34 @@ import { AppComponent } from './app.component';
 
 import { IndexComponent } from './layout/index/index.component';
 import { PessoaslistComponent } from './pessoas/pessoaslist/pessoaslist.component';
+import { CarroslistComponent } from './carros/carroslist/carroslist.component';
+import { LivroslistComponent } from './livros/livroslist/livroslist.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { LoginComponent } from './sistema/login/login.component';
+import { PessoasdetailComponent } from './pessoas/pessoasdetail/pessoasdetail.component';
+import { CarrosdetailComponent } from './carros/carrosdetail/carrosdetail.component';
+import { LivrosdetailComponent } from './livros/livrosdetail/livrosdetail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     PessoaslistComponent,
-    IndexComponent
+    IndexComponent,
+    CarroslistComponent,
+    LivroslistComponent,
+    FooterComponent,
+    HeaderComponent,
+    LoginComponent,
+    PessoasdetailComponent,
+    CarrosdetailComponent,
+    LivrosdetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
